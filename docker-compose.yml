@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend/
+    ports:
+      - 3000:80
+    restart: always
+
+  blogpost:
+    build: ./blogpost/
+    ports:
+      - 4001:4001
+    restart: always
+
+  blogcomment:
+    build: ./blogcomment/
+    ports:
+      - 4002:4002
+    restart: always
+
+  query:
+    build: ./QueryService/
+    ports:
+      - 4003:4003
+    restart: always
+
+  eventbus:
+    build: ./eventbus/
+    ports:
+      - 4005:4005
+    restart: always
