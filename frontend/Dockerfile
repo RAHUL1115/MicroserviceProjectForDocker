@@ -5,6 +5,6 @@ RUN npm install
 COPY ./. ./.
 RUN npm run build
 
-FROM nginx
+FROM nginx:1-bullseye
 WORKDIR /usr/share/nginx/html
 COPY  --from=uiapp /node/app/build ./.
