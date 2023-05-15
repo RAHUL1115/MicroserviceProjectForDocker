@@ -1,5 +1,1 @@
-/blogpost/node_modules
-/blogcomment/node_modules
-/eventbus/node_modules
-/QueryService/node_modules
-/frontend/node_modules
+**/node_modules
